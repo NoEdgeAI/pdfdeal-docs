@@ -2,6 +2,11 @@
 title: 更新日志
 icon: wrench
 ---
+## V1.0.2
+### 🔧 BUG修复
+- 修复图片替换工具`md_replace_imgs`某些情况下导出值异常的问题 by @Menghuan1918 in https://github.com/Menghuan1918/pdfdeal/pull/65
+- 使用uuid重命名文件名功能变量名错误的问题 by @Chen571428 in https://github.com/Menghuan1918/pdfdeal/pull/64
+
 ## V1.0.1
 ### ✨ 新功能
 
