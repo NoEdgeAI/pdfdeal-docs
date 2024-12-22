@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://menghuan1918.github.io/pdfdeal-docs/pdfdeal-docs/sitemap.xml
+Sitemap: https://noedgeai.github.io/pdfdeal-docs/pdfdeal-docs/sitemap.xml
