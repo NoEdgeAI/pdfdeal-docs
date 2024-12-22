@@ -31,7 +31,7 @@ pip install --upgrade "pdfdeal[rag]"
 |------|------|----------|--------|
 | `mdfile` | `str` | 必填 | Markdown 文件路径 |
 | `replace` | `str` 或 `function` | `"local"` | 用于替换图片链接的字符串或**函数**。当为字符串时仅接受 `"local"`  |
-| `skip` | `str` | `None` | 以该字符串开头的 URL 将被跳过。例如，`"https://menghuan1918.github.io/pdfdeal-docs"` |
+| `skip` | `str` | `None` | 以该字符串开头的 URL 将被跳过。例如，`"https://noedgeai.github.io/pdfdeal-docs"` |
 | `outputpath` | `str` | `""` | 保存图片的输出路径。如果未设置，将创建一个与 Markdown 文件同名并添加 `_img` 的文件夹。**仅在 `replace` 为 `"local"` 时有效** |
 | `relative` | `bool` | `False` | 使用相对路径保存图片。**仅在 `replace` 为 `"local"` 时有效** |
 | `threads` | `int` | `5` | 下载图片的线程数 |
@@ -76,7 +76,7 @@ md_replace_imgs(
 | `replace` | `str` 或 `function` | `"local"` | 用于替换图片链接的字符串或**函数**。当为字符串时仅接受 `"local"` |
 | `outputpath` | `str` | `""` | 保存图片的输出路径。如果未设置，将创建一个与 Markdown 文件同名并添加 `_img` 的文件夹。**仅在 `replace` 为 `"local"` 时有效** |
 | `relative` | `bool` | `False` | 是否以相对路径保存图片。**仅在 `replace` 为 `"local"` 时有效** |
-| `skip` | `str` | `None` | 以该字符串开头的 URL 将被跳过。例如，`"https://menghuan1918.github.io/pdfdeal-docs"` |
+| `skip` | `str` | `None` | 以该字符串开头的 URL 将被跳过。例如，`"https://noedgeai.github.io/pdfdeal-docs"` |
 | `threads` | `int` | `2` | 同时处理的MD文档数量 |
 | `down_load_threads` | `int` | `3` | 在一个 Markdown 文件中下载图片的线程数 |
 | `path_style`<Badge text="需要0.4.10+版本" type="warning" /> | `bool` | `False` | 上传到OSS时是否使用路径样式。如果为True，路径将为`/{filename}/{md5}.{extension}`。|
@@ -114,7 +114,7 @@ md_replace_imgs(
 mds_replace_imgs(
     path="Output",
     replace="local",
-    skip="https://menghuan1918.github.io/pdfdeal-docs",
+    skip="https://noedgeai.github.io/pdfdeal-docs",
     threads=5,
 )
 ```

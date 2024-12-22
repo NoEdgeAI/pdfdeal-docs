@@ -217,6 +217,6 @@ md_replace_imgs(
 
 正在赶来的路上~
 
-如您想提交一个关于文件上传的 PR，请首先 fork[项目](https://github.com/Menghuan1918/pdfdeal)，随后在项目的`src/pdfdeal/FileTools/Img`文件夹中新建`.py`文件，您可以仿照文件夹中其他上出实现完成您的上传操作，最后发起 PR🥳
+如您想提交一个关于文件上传的 PR，请首先 fork[项目](https://github.com/NoEdgeAI/pdfdeal)，随后在项目的`src/pdfdeal/FileTools/Img`文件夹中新建`.py`文件，您可以仿照文件夹中其他上出实现完成您的上传操作，最后发起 PR🥳
 
 感谢[@Huxb12138](https://github.com/Huxb12138)贡献的MinIO上传工具

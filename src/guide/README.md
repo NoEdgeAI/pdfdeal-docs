@@ -49,7 +49,7 @@ You can use the Doc2X-related parts of the library separately, which comes with 
 
 See [Doc2X manual](Doc2X/README.md) for details.
 
-If you want to use the encapsulated asynchronous request function directly, use `from pdfdeal.Doc2X.Convert import *` to import the function, and refer to [this document](https://github.com/Menghuan1918/pdfdeal/blob/main/src/pdfdeal/Doc2X/Convert.py) for function descriptions.
+If you want to use the encapsulated asynchronous request function directly, use `from pdfdeal.Doc2X.Convert import *` to import the function, and refer to [this document](https://github.com/NoEdgeAI/pdfdeal/blob/main/src/pdfdeal/Doc2X/Convert.py) for function descriptions.
 
 ### Built-in document processing tools
 

@@ -4,17 +4,17 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://menghuan1918.github.io/pdfdeal-docs/",
+  hostname: "https://noedgeai.github.io/pdfdeal-docs/",
   author: {
-    name: "Menghuan1918",
-    url: "https://github.com/Menghuan1918",
+    name: "NoEdgeAI",
+    url: "https://noedgeai.com/",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "/favicon.ico",
   favicon: "/favicon.ico",
-  repo: "Menghuan1918/pdfdeal-docs",
+  repo: "NoEdgeAI/pdfdeal-docs",
 
   docsDir: "src",
 
@@ -66,13 +66,13 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "Menghuan1918/pdfdeal-docs",
-      repoId: "R_kgDOMUblpQ",
-      category: "Announcements",
-      categoryId: "DIC_kwDOMUblpc4CgvRc",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "NoEdgeAI/pdfdeal-docs",
+    //   repoId: "R_kgDOMUblpQ",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOMUblpc4CgvRc",
+    // },
 
 
     components: {

@@ -100,7 +100,7 @@ print(success, failed, flag)
 
 ![Made with PPT](../../images/demo/RAG/CUT.png)
 
-详细参照[此处](https://menghuan1918.github.io/pdfdeal-docs/zh/guide/Tools/Auto_split.html)。
+详细参照[此处](https://noedgeai.github.io/pdfdeal-docs/zh/guide/Tools/Auto_split.html)。
 
 ```python
 # 上接step1中的代码

@@ -144,4 +144,4 @@ md_replace_imgs(
 
 On the way~
 
-If you want to submit a PR about file upload, please first fork [project](https://github.com/Menghuan1918/pdfdeal), then create a new `.py` file in the project's `src/pdfdeal/FileTools/Img` folder, and you can imitate the other uploads in the folder. Realization to complete your upload operation, and finally launch PR🥳
+If you want to submit a PR about file upload, please first fork [project](https://github.com/NoEdgeAI/pdfdeal), then create a new `.py` file in the project's `src/pdfdeal/FileTools/Img` folder, and you can imitate the other uploads in the folder. Realization to complete your upload operation, and finally launch PR🥳

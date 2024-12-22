@@ -4,13 +4,13 @@ icon: wrench
 ---
 ## V1.0.2
 ### 🔧 BUG修复
-- 修复图片替换工具`md_replace_imgs`某些情况下导出值异常的问题 by @Menghuan1918 in https://github.com/Menghuan1918/pdfdeal/pull/65
-- 使用uuid重命名文件名功能变量名错误的问题 by @Chen571428 in https://github.com/Menghuan1918/pdfdeal/pull/64
+- 修复图片替换工具`md_replace_imgs`某些情况下导出值异常的问题 by @Menghuan1918 in https://github.com/NoEdgeAI/pdfdeal/pull/65
+- 使用uuid重命名文件名功能变量名错误的问题 by @Chen571428 in https://github.com/NoEdgeAI/pdfdeal/pull/64
 
 ## V1.0.1
 ### ✨ 新功能
 
-- 上传图片到图床现在支持自动使用uuid重命名文件名 [🔍查看使用示例](../guide/Tools/MD_imgs.md) [#60](https://github.com/Menghuan1918/pdfdeal/issues/60) by [@Chen571428](https://github.com/Chen571428)
+- 上传图片到图床现在支持自动使用uuid重命名文件名 [🔍查看使用示例](../guide/Tools/MD_imgs.md) [#60](https://github.com/NoEdgeAI/pdfdeal/issues/60) by [@Chen571428](https://github.com/Chen571428)
 
 - MD分割工具支持更多分割选项：`auto`（依次尝试H3、H2、H1）、`H1`（按一级标题分割）、`H2`（按二级标题分割）、`H3`（按三级标题分割） [🔍查看使用示例](../guide/Tools/Auto_split.md)
 
@@ -21,7 +21,7 @@ icon: wrench
 ## V0.4.10
 ### ✨ 新功能
 - 新增内置上传工具：[PicGo](https://github.com/Molunerfinn/PicGo)。现在支持将 Markdown 文档中的本地或在线图片，通过PicGo上传到图床。[🔍查看使用示例](../guide/Tools/Upload.md#picgo)
-- 上传MD图片到图床现在支持使用路径格式(以`/{PDF名字}/{图片的md5}.{拓展名}`形式上传)，[🔍查看使用示例](../guide/Tools/MD_imgs.md) [#53](https://github.com/Menghuan1918/pdfdeal/issues/53)
+- 上传MD图片到图床现在支持使用路径格式(以`/{PDF名字}/{图片的md5}.{拓展名}`形式上传)，[🔍查看使用示例](../guide/Tools/MD_imgs.md) [#53](https://github.com/NoEdgeAI/pdfdeal/issues/53)
 - 新增HTML表格转换为Markdown格式的文件处理工具。 [🔍查看使用示例](../guide/Tools/Html2MD.md)
 
 ### 🚀 其他
@@ -30,10 +30,10 @@ icon: wrench
 
 ## V0.4.9
 ### ✨ 新功能
-- 新增内置上传工具：MinIO。您可以轻松地将Markdown文档中的图片（无论是在线链接还是本地链接）上传到MinIO，并使用MinIO生成的图片链接进行替换。[🔍查看使用示例](../guide/Tools/Upload.md#minio) by [@Huxb12138](https://github.com/Huxb12138) in [#51](https://github.com/Menghuan1918/pdfdeal/pull/51)
+- 新增内置上传工具：MinIO。您可以轻松地将Markdown文档中的图片（无论是在线链接还是本地链接）上传到MinIO，并使用MinIO生成的图片链接进行替换。[🔍查看使用示例](../guide/Tools/Upload.md#minio) by [@Huxb12138](https://github.com/Huxb12138) in [#51](https://github.com/NoEdgeAI/pdfdeal/pull/51)
 
 ### 🚀 其他
-- 新增一些[示范代码](https://github.com/Menghuan1918/pdfdeal/tree/main/examples)
+- 新增一些[示范代码](https://github.com/NoEdgeAI/pdfdeal/tree/main/examples)
 
 ## V0.4.8
 ### ✨ 新功能
@@ -285,5 +285,5 @@ icon: wrench
 
 ### 🚀 其他
 
-- 文档更新至单独的储存库[pdfdeal-docs](https://github.com/Menghuan1918/pdfdeal-docs)
+- 文档更新至单独的储存库[pdfdeal-docs](https://github.com/NoEdgeAI/pdfdeal-docs)
 - 更新了单元测试

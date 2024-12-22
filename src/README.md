@@ -23,17 +23,17 @@ features:
   - title: 查看中文文档
     icon: language
     details: 请从从此处查看中文文档，或者您也可以点击右上角图标切换中文/English
-    link: https://menghuan1918.github.io/pdfdeal-docs/zh/guide/
+    link: https://noedgeai.github.io/pdfdeal-docs/zh/guide/
 
   - title: Quick Start
     icon: clipboard-check
     details: Quickly batch convert PDFs or images using the Doc2X API with the command line tool `doc2x`.
-    link: https://menghuan1918.github.io/pdfdeal-docs/guide/CLI/
+    link: https://noedgeai.github.io/pdfdeal-docs/guide/CLI/
     
   - title: RAG Enhancements
     icon: tachometer-alt
     details: RAG enhancement with Doc2X
-    link: https://menghuan1918.github.io/pdfdeal-docs/guide/Doc2X/3.html
+    link: https://noedgeai.github.io/pdfdeal-docs/guide/Doc2X/3.html
 # highlights:
 #   - header: Easy to install
 #     image: /assets/image/box.svg

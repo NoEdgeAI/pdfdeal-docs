@@ -27,7 +27,7 @@ Replace image links in a single Markdown file (CDN Links -> Local Files/AliOSS/C
 |------|------|----------|--------|
 | `mdfile` | `str` | Required | Markdown file path |
 | `replace` | `str` or `function` | `“local”` | Strings or **functions** used to replace image links. Only accepts `“local”` | `str` or `function` | `“local”` | strings for replacing image links.
-| ``skip` | `str` | `None` | URLs that start with this string will be skipped. For example, `“https://menghuan1918.github.io/pdfdeal-docs”` |
+| ``skip` | `str` | `None` | URLs that start with this string will be skipped. For example, `“https://noedgeai.github.io/pdfdeal-docs”` |
 | ``outputpath` | `str` | `“”` | saves the output path of the image. If not set, a folder with the same name as the Markdown file will be created with `_img` added. **Only works if `replace` is `“local”` |
 | `relative` | `bool` | `False` | Saves images using relative paths. **Valid only if `replace` is `“local”` |
 | `threads` | `int` | `5` | Number of threads to download the image |
@@ -70,7 +70,7 @@ Replace image links in all Markdown files in the specified path (CDN Links -> Lo
 | `replace` | `str` or `function` | `“local”` | Strings or **functions** used to replace image links. Only accepts `“local”` | `str` or `function` | `“local”` | for replacing image links.
 | ``outputpath` | `str` | `“”` | Save the output path of the image. If not set, a folder with the same name as the Markdown file will be created with `_img` added. **Only works if `replace` is `“local”`** |
 | `relative` | `bool` | `False` | Whether to save the image as a relative path.  **Only valid if `replace` is `"loca"`** |
-| ``skip` | `str` | `None` | URLs starting with this string will be skipped. For example, `“https://menghuan1918.github.io/pdfdeal-docs”` |
+| ``skip` | `str` | `None` | URLs starting with this string will be skipped. For example, `“https://noedgeai.github.io/pdfdeal-docs”` |
 | `threads` | `int` | `2` | Number of MD documents processed simultaneously |
 | `down_load_threads` | `int` | `3` | Number of threads downloading images in a Markdown file |
 
@@ -106,7 +106,7 @@ Returns a tuple `(list1, list2, bool)` with three elements:
 mds_replace_imgs(
     path="Output",
     replace="local",
-    skip="https://menghuan1918.github.io/pdfdeal-docs",
+    skip="https://noedgeai.github.io/pdfdeal-docs",
     threads=5,
 )
 ```

@@ -100,7 +100,7 @@ Most RAG apps offer the ability to customize paragraphs, so we can manually add 
 
 ![Made with PPT](../images/demo/RAG/CUT.png)
 
-Please [see](https://menghuan1918.github.io/pdfdeal-docs/zh/guide/Tools/Auto_split.html).
+Please [see](https://noedgeai.github.io/pdfdeal-docs/zh/guide/Tools/Auto_split.html).
 
 ```python
 # Go up to the code in step1
