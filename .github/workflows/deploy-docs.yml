@@ -22,20 +22,15 @@ jobs:
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 8
-
 
       - name: 设置 Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: 安装依赖
-        run: |
-          corepack enable
-          pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: 构建文档
         env:
