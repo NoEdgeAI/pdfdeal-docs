@@ -271,3 +271,125 @@ status, url
 ('Success',
  'https://doc2x-backend.s3.cn-north-1.amazonaws.com.cn/objects/0192e2a9-90e8-7984-8860-979267ce6d74/convert_docx_origin.docx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=xxxxxxxxxxx')
 ```
+
+## 异步图片处理实现
+
+> [!warning]
+> 图片接口上线时间请以官网为准
+
+### 图片OCR识别
+
+#### 函数签名
+```python
+async def parse_image_ocr(apikey: str, image_path: str) -> tuple[list, str]
+```
+
+#### 描述
+`parse_image_ocr` 是一个异步函数，用于对图片进行OCR识别。该函数直接与Doc2X API通信，实现了图片OCR的底层功能。
+
+#### 参数
+| 参数名       | 类型   | 描述                     | 是否可选 | 默认值 |
+|-------------|--------|-------------------------|----------|---------|
+| `apikey`    | `str`  | Doc2X API密钥           | 否       | N/A     |
+| `image_path`| `str`  | 图片文件的路径           | 否       | N/A     |
+
+#### 返回值
+返回一个包含以下内容的元组：
+1. OCR识别结果的文本行列表
+2. 请求的唯一标识符(uid)
+
+#### 异常
+- `FileError`: 当文件大小超过限制或无法打开文件时抛出
+- `RateLimit`: 当达到API速率限制时抛出
+- `RequestError`: 当解析失败时抛出
+- `Exception`: 其他错误时抛出
+
+#### 示范代码
+
+::: tabs#code
+
+@tab Python
+```python
+from pdfdeal.Doc2X.Image import parse_image_ocr
+import asyncio
+
+ocr_results, uid = asyncio.run(
+    parse_image_ocr(
+        apikey="sk-xxx",
+        image_path="path/to/image.jpg"
+    )
+)
+
+print(ocr_results, uid)
+```
+@tab Jupyter Notebook
+```python
+from pdfdeal.Doc2X.Image import parse_image_ocr
+
+ocr_results, uid = await parse_image_ocr(
+    apikey="sk-xxx",
+    image_path="path/to/image.jpg"
+)
+ocr_results, uid
+```
+:::
+
+### 图片版面分析
+
+#### 函数签名
+```python
+async def parse_image_layout(apikey: str, image_path: str, zip_path: str = None) -> tuple[list, str]
+```
+
+#### 描述
+`parse_image_layout` 是一个异步函数，用于对图片进行版面识别。
+
+#### 参数
+| 参数名       | 类型   | 描述                                                      | 是否可选 | 默认值 |
+|-------------|--------|----------------------------------------------------------|----------|---------|
+| `apikey`    | `str`  | Doc2X API密钥                                            | 否       | N/A     |
+| `image_path`| `str`  | 图片文件的路径                                            | 否       | N/A     |
+| `zip_path`  | `str`  | 保存分析结果zip文件的路径。如果不指定，默认为图片名+picture.zip | 是       | `None`  |
+
+#### 返回值
+返回一个包含以下内容的元组：
+1. 包含页面维度和md格式内容的页面字典列表
+2. 请求的唯一标识符(uid)
+
+#### 异常
+- `FileError`: 当文件大小超过限制、无法打开文件或zip路径无效时抛出
+- `RateLimit`: 当达到API速率限制时抛出
+- `RequestError`: 当解析失败时抛出
+- `Exception`: 其他错误时抛出
+
+#### 示范代码
+
+::: tabs#code
+
+@tab Python
+```python
+from pdfdeal.Doc2X.Image import parse_image_layout
+import asyncio
+
+layout_results, uid = asyncio.run(
+    parse_image_layout(
+        apikey="sk-xxx",
+        image_path="path/to/image.jpg",
+        zip_path="path/to/save.zip"
+    )
+)
+
+print(layout_results, uid)
+```
+@tab Jupyter Notebook
+```python
+from pdfdeal.Doc2X.Image import parse_image_layout
+
+layout_results, uid = await parse_image_layout(
+    apikey="sk-xxx",
+    image_path="path/to/image.jpg",
+    zip_path="path/to/save.zip"
+)
+layout_results, uid
+```
+:::

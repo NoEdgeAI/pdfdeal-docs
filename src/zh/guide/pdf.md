@@ -22,7 +22,8 @@ order: 2
 | `output_format`| `str`              | 所需的输出格式。支持的文本格式包括：`md_dollar`、`md`、`tex`、`docx`，其成功返回值将是文件所在地址。支持的变量格式包括：`text`、`texts`、`detailed`，其成功返回值将是：`md形式的字符串`，`list形式的按页分割的字符串`，`list形式的按页分割的字符串(包含详细页面信息)`，其也支持同时输出多种格式<Badge text="需要0.4.8b3+版本" type="warning" />，详细参见下方说明。   | 是       | `md_dollar`  |
 | `ocr`         | `bool`              | 是否使用OCR。                                                        | 是       | `True`       |
 | `convert`     | `bool`              | 是否将 `[` 和 `[[` 转换为 `$` 和 `$$`，仅在 `output_format` 为变量格式(`text`、`texts`、`detailed`)时有效。 | 是       | `False`      |
-| `oss_choose`<Badge text="需要0.4.8b1+版本" type="warning" />  | `str`               | 现在可以通过API直接上传文件或通过API提供的OSS链接上传文件。可接受的值：`auto`、`always`、`never`（即`仅>=100MB的文件将上传到OSS`，`所有文件都将上传到OSS`，`所有文件都将直接上传`）。 | 是      | `"always"`   |
+| `oss_choose`<Badge text="需要0.4.8b1+版本" type="warning" />  | `str`               | 现在可以通过API直接上传文件或通过API提供的OSS链接上传文件，建议使用默认值。可接受的值：`auto`、`always`、`never`（即`仅>=100MB的文件将上传到OSS`，`所有文件都将上传到OSS`，`所有文件都将直接上传`）。 | 是      | `"always"`   |
+| `merge_cross_page_forms`<Badge text="需要1.0.3+版本" type="warning" /> | `bool` | 是否合并跨页表格 | 是 | `False` |
 
 ### 输出多种格式<Badge text="需要0.4.8b3+版本" type="warning" />
 
