@@ -26,7 +26,10 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-
+          
+      - name: List files in the working directory
+        run: ls -la
+        
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
 
